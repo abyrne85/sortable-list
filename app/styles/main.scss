@@ -1,0 +1,49 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.sortable-list{
+  .left-list{
+    float:left;
+  }
+  .right-list{
+    float:right;
+
+  }
+
+  .left{
+    background-color: #fef;
+    &:hover{
+      background-color :#ede;
+    }
+  }
+  .right{
+    background-color:#ffe;
+    &:hover{
+      background-color: #eed;
+    }
+  }
+  li{
+    list-style-type: none;
+    border:1px solid #ddd;
+    padding:10px;
+    margin-bottom: 3px;
+
+  }
+  h2{
+    text-align: center;
+  }
+  
+  li{
+    cursor:pointer;
+    &:hover{
+      font-style: bold;
+      opacity: 0.8;
+    }
+  }
+  .btn{
+    float:right;
+  }
+
+}
