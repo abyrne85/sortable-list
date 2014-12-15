@@ -14,17 +14,17 @@ angular.module('angulistApp')
       'AngularJS',
       'Karma'
     ];
-  var tmpList = [];
-  
-  
 
-  $http.get('./jobs.json').success(function(data){
+  //var tmpList = [];
+
+  $http.get('jobs.json').success(function(data){
 		$scope.jobs = data;
-
     $scope.pool1 = $scope.jobs[0];
     $scope.pool2 = $scope.jobs[1];
-  
   });
+
+ 
+
   
   $scope.sortableOptions = {
     placeholder: "job",

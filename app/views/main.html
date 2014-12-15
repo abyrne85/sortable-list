@@ -5,18 +5,19 @@
   	<h2>Pools</h2>
 	
     <ul ui-sortable="sortableOptions" class="jobs-container screen left-list" ng-model="pool1">
-		<h3>Belfast</h3>
       	<li class="job left" ng-repeat="job in pool1">
-          <p>{{job.name}}</p>
-          <p>{{job.pool}}</p>
+          <p> {{job.name}}
+              {{job.pool}}
+          </p>
       	</li>
     </ul>
 
     <ul ui-sortable="sortableOptions" class="jobs-container screen right-list" ng-model="pool2">
-    	<h3>Dublin</h3>
+
       	<li class="job right" ng-repeat="job in pool2">
-          <p>{{job.name}}</p>
-          <p>{{job.pool}}</p>    	
+          <p> {{job.name}}
+              {{job.pool}}
+          </p>
         </li>
     </ul>
   <div class="clearfix"></div>
