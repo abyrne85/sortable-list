@@ -53,6 +53,8 @@ $scope.updatedPool2=[];
 
   $scope.updateList = function(){
 
+    $scope.updatedPool1=[];
+    $scope.updatedPool2=[];
 
     for(var i=0;i<$scope.pool1.length;i++){
       if($scope.pool1[i].pool !== pool1location){
