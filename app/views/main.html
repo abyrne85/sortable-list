@@ -9,30 +9,34 @@
           <p> {{job.name}} : {{job.pool}} </p>          
       	</li>
     </ul>
-
+    
     <ul ui-sortable="sortableOptions" class="jobs-container screen right-list" ng-model="pool2">
-
       	<li class="job right" ng-repeat="job in pool2">
           <p> {{job.name}} : {{job.pool}} </p>
         </li>
     </ul>
+
   <div class="clearfix"></div>
+
   <button class="btn btn-default" ng-click="updateList()">UPDATE</button>
   <button class="btn btn-default" ng-click="resetList()">RESET</button>
 
   </div>
 
-    <div class="movedJobs" ng-show="showMovedJobs">  
-      <h4>Pool1</h4>
-      <div id="pool1-updated-items" value="Object To JSON" ng-model="updatedPool1">
-        {{updatedPool1 | json}}
-      </div>
-      <h4>Pool2</h4>
-      <div id="pool2-updated-items" value="Object To JSON" ng-model="updatedPool1">
-        {{updatedPool2 | json}}
-      </div>
+</div>
+
+  <div class="movedJobs container" ng-show="showMovedJobs">  
+
+    <h4>Pool1</h4>
+    <div id="pool1-updated-items" value="Object To JSON" ng-model="updatedPool1">
+      {{updatedPool1 | json}}
     </div>
 
-</div>
+    <h4>Pool2</h4>
+    <div id="pool2-updated-items" value="Object To JSON" ng-model="updatedPool1">
+      {{updatedPool2 | json}}
+    </div>
+    
+  </div>
 
 
