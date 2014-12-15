@@ -21,7 +21,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     background-color: #f3f3f3;
     cursor:pointer;
     &:hover{
-      font-style: bold;
       background-color: #e8e8f3;
     }
 
@@ -34,4 +33,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     float:right;
     margin-left: 10px;
   }
+
 }
+
