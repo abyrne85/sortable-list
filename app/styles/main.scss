@@ -12,38 +12,26 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
   }
 
-  .left{
-    background-color: #fef;
-    &:hover{
-      background-color :#ede;
-    }
-  }
-  .right{
-    background-color:#ffe;
-    &:hover{
-      background-color: #eed;
-    }
-  }
+
   li{
     list-style-type: none;
     border:1px solid #ddd;
     padding:10px;
     margin-bottom: 3px;
+    background-color: #f3f3f3;
+    cursor:pointer;
+    &:hover{
+      font-style: bold;
+      background-color: #e8e8f3;
+    }
 
   }
   h2{
     text-align: center;
   }
   
-  li{
-    cursor:pointer;
-    &:hover{
-      font-style: bold;
-      opacity: 0.8;
-    }
-  }
   .btn{
     float:right;
+    margin-left: 10px;
   }
-
 }

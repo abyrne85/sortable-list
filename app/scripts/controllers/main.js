@@ -15,21 +15,38 @@ angular.module('angulistApp')
       'Karma'
     ];
 
-  //var tmpList = [];
 
-  $http.get('jobs.json').success(function(data){
-		$scope.jobs = data;
-    $scope.pool1 = $scope.jobs[0];
-    $scope.pool2 = $scope.jobs[1];
-  });
 
- 
+
+
+ function initList(){
+    $http.get('jobs.json').success(function(data){
+  		$scope.jobs = data;
+      $scope.pool1 = $scope.jobs[0];
+      $scope.pool2 = $scope.jobs[1];
+    });
+  }
+  initList();
+
+
 
   
   $scope.sortableOptions = {
-    placeholder: "job",
-    connectWith: ".jobs-container"
+    placeholder: 'job',
+    connectWith: '.jobs-container',
+    stop: function(e, ui) {
+    
+    }
   };
 
     
+  $scope.resetList = function(){
+    initList();
+  };
+
+  $scope.updateList = function(){
+   
+  };
+
+
 });

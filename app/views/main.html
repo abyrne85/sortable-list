@@ -1,27 +1,24 @@
 <div class="container sortable-list">
 
   <div class="col-md-6">
-
-  	<h2>Pools</h2>
 	
+    <h2>Sortable list</h2>
+
     <ul ui-sortable="sortableOptions" class="jobs-container screen left-list" ng-model="pool1">
       	<li class="job left" ng-repeat="job in pool1">
-          <p> {{job.name}}
-              {{job.pool}}
-          </p>
+          <p> {{job.name}} : {{job.pool}} </p>          
       	</li>
     </ul>
 
     <ul ui-sortable="sortableOptions" class="jobs-container screen right-list" ng-model="pool2">
 
       	<li class="job right" ng-repeat="job in pool2">
-          <p> {{job.name}}
-              {{job.pool}}
-          </p>
+          <p> {{job.name}} : {{job.pool}} </p>
         </li>
     </ul>
   <div class="clearfix"></div>
-  <button class="btn btn-success">Update</button>
+  <button class="btn btn-default" ng-click="updateList()">UPDATE</button>
+  <button class="btn btn-default" ng-click="resetList()">RESET</button>
 
   </div>
 
