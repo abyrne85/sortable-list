@@ -2,6 +2,26 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+.header{
+
+  .main-buttons{
+    width:200px;
+    height:100px;
+    background-color:#dadada;
+    line-height: 100px;
+    float:left;
+    margin:20px;
+    text-align: center;
+    &:hover{
+      opacity:0.8;
+    }
+  }
+  a{
+    color:black;
+  }
+}
+
+
 
 .sortable-list{
   .left-list{
@@ -9,7 +29,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   }
   .right-list{
     float:right;
-
   }
 
 
@@ -34,5 +53,27 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     margin-left: 10px;
   }
 
+}
+
+.one-list{
+  width:100%;
+  li{
+    list-style: none;
+    border:1px solid #ddd;
+    padding:10px;
+    margin-bottom: 3px;
+    background-color: #f3f3f3;
+    cursor:pointer;
+    &:hover{
+      background-color: #e8e8f3;
+    }
+  }
+  .pool{
+    float:left;
+  }
+  .btn{
+    float:right;
+    margin-left: 10px;
+  }
 }
 

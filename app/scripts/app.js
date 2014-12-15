@@ -20,9 +20,13 @@ angular
   ])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+      .when('/twolists', {
+        templateUrl: 'views/twolists.html',
+        controller: 'TwoListsCtrl'
+      })
+      .when('/onelist', {
+        templateUrl: 'views/onelist.html',
+        controller: 'OneListCtrl'
       })
       .otherwise({
         redirectTo: '/'

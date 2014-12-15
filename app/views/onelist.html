@@ -1,0 +1,17 @@
+ <div class="floatleft one-list container">
+    <ul ui-sortable="sortableOptions" ng-model="pool" class="pool">
+      <li ng-repeat="job in pool" class="job">
+        {{job.name}}
+      </li>
+    </ul>
+
+  </div>
+  <button class="btn btn-default" ng-click="updateList()">UPDATE</button>
+  <button class="btn btn-default" ng-click="resetList()">RESET</button>
+
+
+<div class="movedJobs container" ng-show="showMovedJobs">  
+    <div id="pool1-updated-items" value="Object To JSON" ng-model="updatedList">
+      {{updatedList | json}}
+    </div>    
+</div>

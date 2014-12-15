@@ -19,9 +19,16 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <div class="container">
+        <h2>Sortable list</h2>
+          <div class="header">
+              <a ng-href="#/onelist"><div class="main-buttons">One List</div></a>
+              <a ng-href="#/twolists"><div class="main-buttons">Two Lists</div></a>
+          </div>
+    </div>        
+
     <!-- Add your site or application content here -->
     <div class="container">
-
 
       <div ng-view=""></div>
 
@@ -76,7 +83,8 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/twoLists.js"></script>
+        <script src="scripts/controllers/onelist.js"></script>
         <!-- endbuild -->
 </body>
 </html>
