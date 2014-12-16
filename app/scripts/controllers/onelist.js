@@ -24,12 +24,18 @@ angular.module('angulistApp')
   	}
   	initList();
 
-	$scope.resetList = function(){
+  $scope.sortableOptions = {
+    'stop':function(){
+      updateList();
+    }
+  };
+
+  	$scope.resetList = function(){
     	$scope.showMovedJobs=false;
     	initList();
   	};
 
-  	$scope.updateList=function(){
+  	function updateList(){
   		$scope.updatedList=[];
 	    $scope.showMovedJobs=true;
 

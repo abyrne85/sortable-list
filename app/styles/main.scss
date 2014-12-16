@@ -12,56 +12,61 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 .sortable-list{
   width:440px;
 
-  .left-list{
+  .jobs-container{
+    width:100px;  
     float:left;
-  }
-  .right-list{
-    float:right;
+    margin-right: 10px;
   }
 
 
-  li{
-    list-style-type: none;
+  .job{
+    list-style: none;
     border:1px solid #ddd;
     padding:10px;
-    margin-bottom: 3px;
     background-color: #f3f3f3;
     cursor:pointer;
+    float:left;
+    margin-bottom:10px;
     &:hover{
       background-color: #e8e8f3;
     }
 
   }
-  h2{
-    text-align: center;
-  }
-  
+
   .btn{
-    float:right;
+    float:left;
     margin-left: 10px;
   }
 
 }
 
 .one-list{
-  width:180px;
-  li{
+  width:170px;
+  .job{
     list-style: none;
     border:1px solid #ddd;
     padding:10px;
     margin-bottom: 3px;
     background-color: #f3f3f3;
     cursor:pointer;
+    float:left;
     &:hover{
       background-color: #e8e8f3;
     }
   }
+  
 
-  .btn{
-    float:left ;
-    margin-left: 10px;
+  .btns{
+    width:180px;
+    .btn{
+      float:left;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
   }
+
+
 }
 .moved-jobs{
-  margin-top: 10px;
+  margin-top: 30px;
 }

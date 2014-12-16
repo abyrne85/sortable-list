@@ -43,6 +43,9 @@ $scope.updatedPool2=[];
     
     placeholder: 'job',
     connectWith: '.jobs-container',
+    'stop':function(){
+      updateList();
+    }
   };
 
     
@@ -51,23 +54,21 @@ $scope.updatedPool2=[];
     initList();
   };
 
-  $scope.updateList = function(){
+  function updateList(){
 
     $scope.updatedPool1=[];
     $scope.updatedPool2=[];
 
     for(var i=0;i<$scope.pool1.length;i++){
-      if($scope.pool1[i].pool !== pool1location){
         $scope.updatedPool1.push($scope.pool1[i]);
-      }
+     
     }
     for(var i=0;i<$scope.pool2.length;i++){
-      if($scope.pool2[i].pool !== pool2location){
         $scope.updatedPool2.push($scope.pool2[i]);
-      }
     }
 
     $scope.showMovedJobs=true;
+
   };
 
 
