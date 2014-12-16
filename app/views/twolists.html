@@ -4,14 +4,14 @@
   <table>
     <tr ui-sortable="sortableOptions" class="jobs-container screen left-list" ng-model="pool1">
       	<td class="job left" ng-repeat="job in pool1">
-          <p> {{job.name}} : {{job.pool}} </p>          
+          {{job.name}} : {{job.pool}}         
       	</td>
     </tr>
 
     
     <tr ui-sortable="sortableOptions" class="jobs-container screen right-list" ng-model="pool2">
       	<td class="job right" ng-repeat="job in pool2">
-          <p> {{job.name}} : {{job.pool}} </p>
+         {{job.name}} : {{job.pool}} 
         </td>
     </tr>
   </table>
@@ -23,18 +23,18 @@
 
 </div>
 
-  <div class="moved-jobs container" ng-show="showMovedJobs">  
+<div class="moved-jobs container" ng-show="showMovedJobs">  
 
-    <h4>Pool1</h4>
-    <div id="pool1-updated-items" value="Object To JSON" ng-model="updatedPool1">
-      {{updatedPool1 | json}}
-    </div>
-
-    <h4>Pool2</h4>
-    <div id="pool2-updated-items" value="Object To JSON" ng-model="updatedPool1">
-      {{updatedPool2 | json}}
-    </div>
-    
+  <h4>Pool1</h4>
+  <div id="pool1-updated-items" value="Object To JSON" ng-model="updatedPool1">
+    {{updatedPool1 | json}}
   </div>
+
+  <h4>Pool2</h4>
+  <div id="pool2-updated-items" value="Object To JSON" ng-model="updatedPool1">
+    {{updatedPool2 | json}}
+  </div>
+  
+</div>
 
 

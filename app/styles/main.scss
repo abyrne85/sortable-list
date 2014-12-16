@@ -4,24 +4,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // endbower
 .header{
     border-bottom: 1px solid #ddd;
-
 }
 
-
-
-.sortable-list{
-  width:440px;
-
-  .jobs-container{
-    width:100px;  
-    float:left;
-    margin-right: 10px;
-  }
-
-
-  .job{
-    list-style: none;
-    border:1px solid #ddd;
+.td-style{
+  border:1px solid #ddd;
     padding:10px;
     background-color: #f3f3f3;
     cursor:pointer;
@@ -30,43 +16,33 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
     &:hover{
       background-color: #e8e8f3;
     }
+}
 
-  }
+.sortable-list{
+  width:440px;
 
-  .btn{
+  .jobs-container{
+    width:160px;
     float:left;
-    margin-left: 10px;
   }
 
+  .job{
+    width:150px;
+    @extend .td-style;
+  }
 }
 
 .one-list{
   width:170px;
   .job{
-    list-style: none;
-    border:1px solid #ddd;
-    padding:10px;
-    margin-bottom: 3px;
-    background-color: #f3f3f3;
-    cursor:pointer;
-    float:left;
-    &:hover{
-      background-color: #e8e8f3;
-    }
+    @extend .td-style;
   }
-  
-
-  .btns{
-    width:180px;
-    .btn{
-      float:left;
-      margin-right: 10px;
-      margin-top: 10px;
-    }
-  }
-
-
 }
+
 .moved-jobs{
   margin-top: 30px;
+}
+
+.btn{
+  float:left;
 }
