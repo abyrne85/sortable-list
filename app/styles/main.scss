@@ -3,27 +3,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 .header{
+    border-bottom: 1px solid #ddd;
 
-  .main-buttons{
-    width:200px;
-    height:100px;
-    background-color:#dadada;
-    line-height: 100px;
-    float:left;
-    margin:20px;
-    text-align: center;
-    &:hover{
-      opacity:0.8;
-    }
-  }
-  a{
-    color:black;
-  }
 }
 
 
 
 .sortable-list{
+  width:440px;
+
   .left-list{
     float:left;
   }
@@ -56,7 +44,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 }
 
 .one-list{
-  width:100%;
+  width:180px;
   li{
     list-style: none;
     border:1px solid #ddd;
@@ -68,12 +56,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
       background-color: #e8e8f3;
     }
   }
-  .pool{
-    float:left;
-  }
+
   .btn{
-    float:right;
+    float:left ;
     margin-left: 10px;
   }
 }
-
+.moved-jobs{
+  margin-top: 10px;
+}

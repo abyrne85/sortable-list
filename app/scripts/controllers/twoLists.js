@@ -40,7 +40,9 @@ $scope.updatedPool2=[];
 
 
   $scope.sortableOptions = {
-
+    
+    placeholder: 'job',
+    connectWith: '.jobs-container',
   };
 
     
